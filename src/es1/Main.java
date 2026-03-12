@@ -16,6 +16,8 @@ public class Main {
 //            System.out.println(arrayDipendenti[i].getMatricola());
 //        }
 
+        System.out.println("\n esercizio 2");
+
         DipendenteFullTime dipendenteFullTime = new DipendenteFullTime(1, 1000.0, Dipartimento.VENDITE);
         DipendentePartTime dipendentePartTime = new DipendentePartTime(2, 20.0, 8, Dipartimento.PRODUZIONE);
         Dirigente dirigente = new Dirigente(3, 1500.0, Dipartimento.AMMINISTRAZIONE);
