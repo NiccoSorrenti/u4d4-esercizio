@@ -17,13 +17,21 @@ public class Main {
 //        }
 
         DipendenteFullTime dipendenteFullTime = new DipendenteFullTime(1, 1000.0, Dipartimento.VENDITE);
-        DipendentePartTime dipendentePartTime = new DipendentePartTime(2, 500.0, Dipartimento.PRODUZIONE);
+        DipendentePartTime dipendentePartTime = new DipendentePartTime(2, 20.0, 8, Dipartimento.PRODUZIONE);
         Dirigente dirigente = new Dirigente(3, 1500.0, Dipartimento.AMMINISTRAZIONE);
 
         Dipendente[] arrayDipendenti = {dipendenteFullTime, dipendentePartTime, dirigente};
 
+        double totale = 0;
+
         for (int i = 0; i < arrayDipendenti.length; i++) {
-            
+            double stipendio = arrayDipendenti[i].calculateSalary();
+
+            System.out.println("Matricola: " + arrayDipendenti[i].getMatricola() + " | Stipendio: " + stipendio);
+
+            totale = totale + stipendio;
         }
+
+        System.out.println("Totale stipendi: " + totale);
     }
 }
