@@ -15,6 +15,4 @@ public class DipendentePartTime extends Dipendente {
     public double calculateSalary() {
         return sipendioOrario * oreLavorate;
     }
-
-
 }

@@ -1,6 +1,6 @@
 package es1;
 
-public abstract class Dipendente {
+public abstract class Dipendente implements Check {
 
     private int matricola;
     private double stipendio;
@@ -28,6 +28,11 @@ public abstract class Dipendente {
     }
 
     public abstract double calculateSalary();
+
+    @Override
+    public void checkIn() {
+        System.out.println("La matricola numero " + matricola + " ha iniziato il turno");
+    }
 
     @Override
     public String toString() {

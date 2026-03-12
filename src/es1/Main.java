@@ -33,5 +33,17 @@ public class Main {
         }
 
         System.out.println("Totale stipendi: " + totale);
+
+        System.out.println("\n esercizio 3");
+
+
+        DipendenteFullTime dipendenteFullTime1 = new DipendenteFullTime(4, 1500.0, Dipartimento.PRODUZIONE);
+        Volontario volontario = new Volontario("Marco", 25, "Studente");
+
+        Check[] dipendentiEVolontari = {dipendenteFullTime1, volontario};
+
+        for (int i = 0; i < dipendentiEVolontari.length; i++) {
+            dipendentiEVolontari[i].checkIn();
+        }
     }
 }
