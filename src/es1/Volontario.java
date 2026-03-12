@@ -14,6 +14,6 @@ public class Volontario implements Check {
 
     @Override
     public void checkIn() {
-        System.out.println("Il dipendente " + nome + " ha iniziato il servizio.");
+        System.out.println("Il volontario " + nome + " ha iniziato il servizio.");
     }
 }
